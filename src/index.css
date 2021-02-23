@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color:rgba(122, 219, 236, 0.918);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cards {
+    width: 100%;
+    height: auto;
+}
+.card{
+    margin: 6%;
+    background-color:rgb(7, 8, 8);
+    width: 21.5%;
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px black;
+    float: left;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover{
+    box-shadow: 0px 30px 18px -8px black;
+    transform: scale(1.05,1.05);
+
+}
+.cardimg{
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+.headingstyle{
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: gray;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.cardcatagory{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: wheat;
+    background-color: white;
+}
+.cardtitle{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+}
+button{
+    padding: 5px 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: thistle;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+
 }
